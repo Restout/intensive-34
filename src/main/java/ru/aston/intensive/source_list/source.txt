@@ -1,0 +1,78 @@
+Паттерны проектирования. Чистота кода. Рефакторинг.	Изучение основных паттернов проектирования	HeadFirst. Паттерны проектирования
+Паттерны проектирования. Чистота кода. Рефакторинг.	Изучение основных паттернов проектирования	Java EE. Паттерны проектирования для профессионалов
+Паттерны проектирования. Чистота кода. Рефакторинг.	Изучение основ UML(на примерах построения диаграмм классов для паттернов)	Гранд. Шаблоны проектирования в Java. 2004.pdf https://prog-cpp.ru/uml-classes/
+Паттерны проектирования. Чистота кода. Рефакторинг.	Паттерны архитектуры
+Паттерны проектирования. Чистота кода. Рефакторинг.	SOLID	https://javarush.ru/groups/posts/698-pjatjh-osnovnihkh-principov-dizayna-klassov-solid-v-java
+Паттерны проектирования. Чистота кода. Рефакторинг.	GRASP	http://igor.quatrocode.com/2008/09/solid-top-5.html
+Паттерны проектирования. Чистота кода. Рефакторинг.	Антипаттерны	https://blog.byndyu.ru/2009/10/solid.html
+Паттерны проектирования. Чистота кода. Рефакторинг.		http://sergeyteplyakov.blogspot.com/2014/10/solid.html
+Паттерны проектирования. Чистота кода. Рефакторинг.		https://www.youtube.com/watch?v=jw3f8OrjYT0&index=4&list=PLmqFxxywkatStbd9hdzVOS1hZa9dc56k4&t=2s
+Паттерны проектирования. Чистота кода. Рефакторинг.		https://www.youtube.com/watch?v=UxXsCS6fbJ0&index=5&list=PLmqFxxywkatStbd9hdzVOS1hZa9dc56k4&t=0s
+Паттерны проектирования. Чистота кода. Рефакторинг.		https://www.youtube.com/watch?v=g98KPenCwQo&index=11&list=PLmqFxxywkatStbd9hdzVOS1hZa9dc56k4&t=0s
+Паттерны проектирования. Чистота кода. Рефакторинг.		https://www.youtube.com/watch?v=l7s3_e2Qy-Q&index=12&list=PLmqFxxywkatStbd9hdzVOS1hZa9dc56k4&t=0s
+Паттерны проектирования. Чистота кода. Рефакторинг.		https://refactoring.guru/ru дабл чекин фасад чейн оф респонс
+Основы алгоритмов и структур данных	Изучение/повторение основных структур данных(массивы, хэш-таблицы, деревья, графы)	Грокаем алгоритмы, https://proglib.io/p/8-data-structures/
+
+Коллекции	Повторение иерархии коллекций
+Коллекции	Изучение основных моментов каждой коллекции
+Коллекции	Изучение immutable class	https://javarush.ru/groups/posts/1946-neizmennoe-v-java-final-konstantih-i-immutable
+Коллекции	Изучение immutable collections	https://docs.oracle.com/javase/9/core/creating-immutable-lists-sets-and-maps.htm#JSCOR-GUID-DB0865D2-C052-40BC-A3DC-20FCB3088DC9
+Коллекции	Знакомство с concurrent коллекциями	https://habr.com/ru/company/luxoft/blog/157273/
+
+Stream API и лямбда-выражения	Функциональные интерфейсы и лямбда выражения	https://habr.com/ru/post/216431/ Optional , https://vertex-academy.com/tutorials/ru/java-8-stream-map/
+Stream API и лямбда-выражения	Stream API	https://vertex-academy.com/tutorials/ru/java-8-uchebnik/
+
+Загрузчики классов	Изучение существующих загрузчиков классов	https://habr.com/ru/post/103830/ , http://www.quizful.net/post/Java !
+Загрузчики классов	Загрузчики классов	http://java-online.ru/java-classloader.xhtml
+
+Кэширование данных	Почему изучаем данную тему	https://dzone.com/articles/introducing-amp-assimilating-caching-quick-read-fo
+Кэширование данных	Изучение механизма кэширования
+Кэширование данных	Виды кэшей	http://cheprogrammer.blogspot.com/2012/02/creating-configurable-two-level-cache.html
+Многопоточность	Потоки в java
+Многопоточность	Способы создания потоков
+Многопоточность	Состояния потоков	https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
+Многопоточность	Пакет concurrent	https://habr.com/ru/company/luxoft/blog/157273/
+Многопоточность	Проблемы многопоточности. Их решение. Мониторинг	https://habr.com/ru/company/otus/blog/427513/
+Модель памяти	Области памяти в Java	http://www.javaspecialist.ru/2011/06/java-memory-model.html , https://habr.com/ru/post/133981/ Модель памяти
+Модель памяти	JMM в констексте многопоточности	https://habr.com/ru/company/golovachcourses/blog/221133/
+
+Изучение основ работы с БД
+Построение базы данных. Построение таблиц.	Learning SQL. Alan Beaulieu - https://drive.google.com/open?id=1f5TjS1EIsMGQrJ4nPuCt66q2VuG7tYZM
+Установка ограничений на поля таблиц.Применение JOIN’ов.
+Создание индексов. Планы запросов.	https://habr.com/ru/post/247373/
+Создание хранимых процедур. Создание функций. Создание триггеров.
+Использование агрегатных функций.	https://function-x.ru/sql_sum_min_max_avg_count.html
+Работа с транзакциями. ACID. Уровни изолированности.	https://habr.com/ru/post/317884/
+SQL инъекции и защита от них.	https://habr.com/ru/post/148701/
+Снятие дампа базы.	https://rigweb.ru/support/bazy-dannykh/chto-takoe-damp-bazy-dannykh-mysql-i-kak-ego-sdelat-/
+Введение в понятие репликации и шардинга	https://ruhighload.com/%D0%A8%D0%B0%D1%80%D0%B4%D0%B8%D0%BD%D0%B3+%D0%B8+%D1%80%D0%B5%D0%BF%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F
+Повторение темы jdbc	https://easyjava.ru/data/jdbc/jdbc-statements/
+Написание своего CRUD-приложения с применением пула соединений	https://javarush.ru/groups/posts/2172-jdbc-ili-s-chego-vsje-nachinaetsja
+Обзор технологии JPA	https://javarush.ru/groups/posts/2259-jpa--znakomstvo-s-tekhnologiey
+Изучение Hibernate	https://habr.com/ru/post/271115/
+Проблемы Hibernate	https://habr.com/ru/post/416851/
+
+Сервлеты и JSP. Сервер приложений Tomcat	Установка, настройка и конфигурирование Tomcat	http://java-course.ru/student/book1/servlet/
+Сервлеты и JSP. Сервер приложений Tomcat	Написание приложения на сервлетах и JSP	http://java-online.ru/jsp.xhtml
+
+Основы работы с XML	Схема документа	https://habr.com/ru/post/90696/
+Основы работы с XML	Парсеры XML. DOM и SAX подходы	https://www.youtube.com/watch?v=FYewIWrg6GI
+Основы работы с XML	Знакомство с XSLT и xPath	https://habr.com/ru/post/114772/
+
+Веб-сервисы	SOAP. Написание своих веб-сервисов	https://habr.com/ru/post/223685/ , https://www.upwork.com/hiring/development/soap-vs-rest-comparing-two-apis/
+Веб-сервисы	REST. Написание своих веб-сервисов	https://en.wikipedia.org/wiki/Representational_state_transfer#cite_note-Fielding-Ch2-9
+
+JMS	Знакомство с технологией	https://www.oracle.com/technetwork/articles/java/jms20-1947669.html
+JMS	Написание своего приложения	http://www.javable.com/columns/serv_side/workshop/14/
+JMS	Kafka VS RabbitMQ	http://java-online.ru/jms-wmq.xhtml
+JMS		https://www.rabbitmq.com/api-guide.html
+
+Тестирование ПО	Знакомство с основными фреймворками для тестирования	https://habr.com/ru/post/120101/
+Тестирование ПО	JUnit или TestNG	http://java-online.ru/junit-mockito.xhtml
+Тестирование ПО	Mockito или EasyMock	https://habr.com/ru/post/121234/
+Тестирование ПО	Написание своих тестов на уже написанных примерах	https://habr.com/ru/post/444982/
+Тестирование ПО	TDD	документация https://static.javadoc.io/org.mockito/mockito-core/2.7.10/org/mockito/Mockito.html
+
+
+
+
