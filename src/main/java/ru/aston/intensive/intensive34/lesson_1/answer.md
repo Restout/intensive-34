@@ -98,9 +98,9 @@
 > 4. Конструктор родителя
 > 5. Нестатический блок ребенка
 > 6. Конструктор ребенка  
-> https://www.baeldung.com/java-static-instance-initializer-blocks  
-> https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
-> https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+> * https://www.baeldung.com/java-static-instance-initializer-blocks  
+> * https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
+> * https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
 
 ### 19. Расскажите какое будет поведение если внутри цикла вызвать оператор break\continue.
 > Ответ....
