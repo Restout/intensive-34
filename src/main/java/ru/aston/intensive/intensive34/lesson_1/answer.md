@@ -98,7 +98,7 @@
 > 4. Конструктор родителя
 > 5. Нестатический блок ребенка
 > 6. Конструктор ребенка  
-> https://www.baeldung.com/java-static-instance-initializer-blocks
+> https://www.baeldung.com/java-static-instance-initializer-blocks  
 > https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
 > https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
 
