@@ -40,7 +40,65 @@
 > https://docs.oracle.com/javase/specs/jls/se8/html/jls-8.html
 
 ### 8. Можно ли в классе заимплементить 2 интерфейса? А если в них один и тот же метод doSmth? Как он реализуется?
-> Ответ....
+> В java классе можно реализовать произвольное количество интерфейсов.
+> При этом данный класс будет соответствовать типам всех тех интерфейсов, которые в нем реализованы.
+> В примере ниже у двух интерфейсов есть абстрактный метод с одинаковой сигнатурой.
+> При этом класс MyClass реализует оба этих интерфейса, и конфликтной ситуации не возникает.
+>
+> ```java
+> public interface InterfaceA {
+>     void doSomething();
+> }
+>
+> public interface InterfaceB { 
+>      void doSomething();
+> }
+> 
+> public class MyClass implements InterfaceA, InterfaceB {
+>     @Override
+>     public void doSomething() {
+>       System.out.println("реализация метода в классе MyClass");
+>    }
+> }
+> ```
+>
+> Однако в Java 8  были добавлены Default-методы.
+> В том случае если в двух интерфейсах будет Default-метод с одинаковой сигнатурой. Возникает ромбовидная проблема.
+> Необходимо будет явно указать какой дефолтный метод будет унаследован, либо же реализовать метод самостоятельно.
+>
+> ```java
+> public interface InterfaceA {
+>     default void doSmth(){
+>         System.out.println("InterfaceA");
+>    }
+> }
+>
+> public interface InterfaceB { 
+>     default void doSmth(){
+>         System.out.println("InterfaceB");
+>     }
+> }
+> public class MyClass implements InterfaceA, InterfaceB {
+>    @Override
+>    public void doSmth() {
+>        InterfaceA.super.doSmth();
+>    }
+>    /*
+>    @Override
+>    public void doSmth() {
+>        InterfaceB.super.doSmth();
+>    }
+>    или же
+>    
+>    @Override
+>    public void doSmth() {
+>        System.out.println("MyClass");;
+>    }
+>    */
+> }
+> ```
+>  Если же у методов названия одинаковые, но сигнатуры разные то ромбовидной проблемы не возникает.
+> * https://docs.oracle.com/javase/tutorial/java/IandI/index.html
 
 ### 9. Статический \ динамический полиморфизм.
 > Полиморфизм бывает статическим (Static Binding) и динамическим (Dynamic Binding). При статическом полиморфизме, он же раннее связывание, компилятор определяет, какой метод и где нужно вызвать. Это позволяет использовать такой механизм, как перегрузка. При динамическом полиморфизме, он же позднее связывание, по ранее вычисленной сигнатуре метода в рантайме будет вычислен метод на основе того, какой объект используется (т.е. метод какого объекта вызывается). То, как эти механизмы работают можно увидеть при помощи байткода.  
