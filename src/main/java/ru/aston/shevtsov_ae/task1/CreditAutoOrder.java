@@ -2,25 +2,27 @@ package ru.aston.shevtsov_ae.task1;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class CreditAutoOrder extends AutoOrder {
-    double percentage;
+    BigDecimal percentage;
     int monthsOfCredit;
 
-    public CreditAutoOrder(User user, int price, String carName, double percentage, int monthsOfCredit) {
+    public CreditAutoOrder(User user, BigDecimal price, String carName, BigDecimal percentage, int monthsOfCredit) {
         super(user, price, carName);
         this.percentage = percentage;
         this.monthsOfCredit = monthsOfCredit;
     }
 
     @Override
-    public double calculateDiscount() {
+    public BigDecimal calculateDiscount() {
         if (monthsOfCredit >= 12 && monthsOfCredit < 24) {
-            return 0.9D;
+            return BigDecimal.valueOf(0.9);
         }
         if (monthsOfCredit >= 24) {
-            return 0.8D;
+            return BigDecimal.valueOf(0.8);
         }
-        return 1D;
+        return BigDecimal.valueOf(1);
     }
 }

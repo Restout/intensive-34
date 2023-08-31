@@ -4,14 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public abstract class AutoOrder {
     private User user;
-    private int price;
+    private BigDecimal price;
     private String carName;
 
-    public abstract double calculateDiscount();
+    public abstract BigDecimal calculateDiscount();
 
 }

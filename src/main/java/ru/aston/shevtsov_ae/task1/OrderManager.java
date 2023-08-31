@@ -6,8 +6,10 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class OrderManager {
+    private static Logger log = Logger.getLogger(OrderManager.class.getName());
     public final List<AutoOrder> autoOrderslist = new ArrayList<>();
 
     public BigDecimal calculateTotalPrice() {
@@ -16,12 +18,14 @@ public class OrderManager {
             return sum;
         }
         for (AutoOrder x : autoOrderslist) {
-            if (x.getPrice() > 0)
-                sum = sum.add(new BigDecimal(x.getPrice() * x.calculateDiscount()));
+            if (x.getPrice().compareTo(BigDecimal.ZERO) > 0) {
+                sum = sum.add(x.getPrice().multiply(x.calculateDiscount()));
+            }
         }
-        sum=sum.setScale(2, RoundingMode.HALF_EVEN);
+        sum = sum.setScale(2, RoundingMode.HALF_EVEN);
         return sum;
     }
+
 
     public List<AutoOrder> getSortedOrederList() {
         try {
@@ -29,7 +33,7 @@ public class OrderManager {
                     .sorted(Comparator.comparing(x -> x.getUser().getSourName()))
                     .toList();
         } catch (NullPointerException e) {
-            System.out.println("Some of Users has null surnames,can not sort");
+            log.info("NPE while sorting");
             return autoOrderslist;
         }
     }

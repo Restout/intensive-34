@@ -2,20 +2,22 @@ package ru.aston.shevtsov_ae.task1;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class FullPriceAutoOrder extends AutoOrder {
-    public FullPriceAutoOrder(User user, int price, String carName, Boolean luckyDay) {
+    Boolean luckyDay;
+
+    public FullPriceAutoOrder(User user, BigDecimal price, String carName, Boolean luckyDay) {
         super(user, price, carName);
         this.luckyDay = luckyDay;
     }
 
-    Boolean luckyDay;
-
     @Override
-    public double calculateDiscount() {
+    public BigDecimal calculateDiscount() {
         if (luckyDay) {
-            return 0.5D;
+            return BigDecimal.valueOf(0.5);
         }
-        return 1D;
+        return BigDecimal.ONE;
     }
 }
